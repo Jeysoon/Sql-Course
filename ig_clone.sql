@@ -102,3 +102,9 @@ INSERT INTO photo_tags (photo_id, tag_id) VALUES
 (2,3),
 (3,2);
 
+-- 1. Finding 5 oldest users
+
+SELECT * 
+FROM users
+ORDER BY created_at
+LIMIT 5;
